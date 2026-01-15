@@ -1,0 +1,16 @@
+---
+alwaysApply: true
+globs:
+  - "**/*"
+---
+
+# Tech Stack (Telegram бот: GPT-5.2 summary/insights по одному Excel)
+
+| Слой | Библиотека / сервис (версия) | Зачем нужен (1 строка) | Официальная документация |
+|---|---|---|---|
+| Runtime | Node.js **v24 (Active LTS)** | Запуск TypeScript/JavaScript сервиса бота в проде на Railway. | https://nodejs.org/docs/latest/api/ |
+| Bot SDK | grammY **v1.39.2** | Удобный Telegram Bot Framework (команды, inline-кнопки, middlewares, webhook/polling). | https://grammy.dev/ |
+| OpenAI SDK | openai (openai-node) **v6.16.0** | Официальный TypeScript SDK для вызова OpenAI API (Responses) и модели GPT‑5.2. | https://github.com/openai/openai-node |
+| Database (если нужна) | Railway PostgreSQL **18** + Prisma ORM **7.2.0** | Персистентное хранение состояния диалога/кэша категорий/логов генерации (вместо in-memory). | https://docs.railway.com/guides/postgresql ; https://www.prisma.io/docs |
+| Deployment (Railway) | Railway (Nixpacks build) **latest** | Автосборка и деплой из GitHub в managed-инфраструктуру (service + env vars + scaling). | https://docs.railway.com/ |
+| Линтер/Форматтер | ESLint **v9.39.2** + Prettier **v3.7.4** | Единый стиль кода, автоформатирование и статический анализ качества/ошибок. | https://eslint.org/docs/latest/ ; https://prettier.io/docs/en/ |

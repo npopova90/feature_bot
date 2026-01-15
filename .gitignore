@@ -1,0 +1,34 @@
+# Environment variables
+.env
+.env.*
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Excel files (optional - uncomment if you don't want to commit Excel files)
+# data/*.xlsx
+
+# Test coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/

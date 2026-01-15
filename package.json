@@ -1,0 +1,48 @@
+{
+  "name": "feature-summary-bot",
+  "version": "0.1.0",
+  "description": "Telegram bot for aggregated feature test summaries using GPT-5.2 and Excel data",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "test": "vitest",
+    "print-categories": "tsx scripts/print_categories.ts"
+  },
+  "keywords": [
+    "telegram-bot",
+    "openai",
+    "excel",
+    "feature-summary"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "grammy": "^1.39.2",
+    "openai": "^6.16.0",
+    "xlsx": "^0.18.5",
+    "zod": "^3.23.8",
+    "dotenv": "^16.4.5",
+    "winston": "^3.15.0",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/xlsx": "^0.0.36",
+    "@types/express": "^5.0.0",
+    "typescript": "^5.7.2",
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.8",
+    "eslint": "^9.39.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "prettier": "^3.7.4"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
